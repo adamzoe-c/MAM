@@ -257,7 +257,12 @@ blockquote.quote{
 .review-card .meta{font-size:.78rem;text-transform:uppercase;letter-spacing:.08em;color:rgba(46,46,46,.55);margin-top:16px;}
 
 footer.site{background:var(--ivory-dim);color:rgba(46,46,46,.75);padding:70px 0 30px;border-top:1px solid var(--line);}
-footer.site .foot-grid{display:grid;grid-template-columns:1.3fr 1fr 1fr;gap:40px;margin-bottom:50px;}
+footer.site .foot-grid{display:grid;grid-template-columns:1.3fr .9fr .9fr .8fr;gap:32px;margin-bottom:50px;}
+.social-link{
+  display:inline-flex;align-items:center;gap:8px;margin-top:16px;
+  color:var(--gold);font-size:.85rem;font-weight:600;
+}
+.social-link:hover{color:var(--espresso);}
 footer.site h4{color:var(--gold);font-size:.85rem;text-transform:uppercase;letter-spacing:.12em;font-family:'Manrope',sans-serif;font-weight:700;margin-bottom:18px;}
 footer.site a{color:rgba(46,46,46,.75);}
 footer.site a:hover{color:var(--gold);}
@@ -392,6 +397,19 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
   text-align:center;font-size:.85rem;color:rgba(46,46,46,.6);
   margin-top:16px;font-style:italic;
 }
+.city-photo{aspect-ratio:4/3;height:auto;min-height:0;border-radius:12px;}
+@media (max-width:860px){.city-photo{order:-1;}}
+
+.leave-review{
+  margin-top:50px;padding-top:44px;border-top:1px solid var(--line);
+  display:flex;align-items:center;justify-content:space-between;gap:24px;flex-wrap:wrap;
+  text-align:left;
+}
+.leave-review .lr-title{font-family:'Fraunces',serif;font-size:1.3rem;color:var(--espresso);margin-bottom:4px;}
+.leave-review p{color:rgba(46,46,46,.7);margin:0;}
+@media (max-width:600px){
+  .leave-review{flex-direction:column;text-align:center;}
+}
 
 .map-embed{
   margin:36px auto 0;max-width:900px;
@@ -462,8 +480,9 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
       <p class="lang-it lede">MAM23 nasce dal coraggio di due madri e prende il nome dalle loro tre figlie. Oggi è il salotto di Mentana per colazioni lente, aperitivi tra amici e serate che si allungano fino a tardi.</p>
       <p class="lang-en lede">MAM23 was born from the courage of two mothers and takes its name from their three daughters. Today it's Mentana's living room — for slow breakfasts, aperitivo with friends, and evenings that run late.</p>
       <div class="cta-row">
-        <a href="chi-siamo.html" class="btn solid"><span class="lang-it">La nostra storia</span><span class="lang-en">Our story</span></a>
-        <a href="dove-siamo.html" class="btn"><span class="lang-it">Dove siamo</span><span class="lang-en">Find us</span></a>
+        <!-- BOOKING: placeholder link for now — swap href="#" for your real booking page/WhatsApp/OpenTable link when ready -->
+        <a href="#" class="btn solid"><span class="lang-it">Prenota un tavolo</span><span class="lang-en">Book a table</span></a>
+        <a href="chi-siamo.html" class="btn"><span class="lang-it">La nostra storia</span><span class="lang-en">Our story</span></a>
       </div>
     </div>
   </div>
@@ -605,6 +624,16 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
     <div style="text-align:center;margin-top:44px;">
       <a href="recensioni.html" class="btn light"><span class="lang-it">Tutte le recensioni</span><span class="lang-en">All reviews</span></a>
     </div>
+    <!-- LEAVE A REVIEW: set the href below to your TripAdvisor "write a review" link -->
+    <div class="leave-review reveal">
+      <div>
+        <div class="lr-title lang-it">Sei già stato da noi?</div>
+        <div class="lr-title lang-en">Already been to see us?</div>
+        <p class="lang-it">Raccontaci com'è andata: la tua recensione ci aiuta a crescere.</p>
+        <p class="lang-en">Tell us how it went — your review helps us grow.</p>
+      </div>
+      <a href="#" class="btn solid"><span class="lang-it">Lascia una recensione</span><span class="lang-en">Leave a review</span></a>
+    </div>
   </div>
 </section>
 
@@ -617,8 +646,9 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
     </div>
     <h2 class="lang-it">Ti aspettiamo a Mentana</h2>
     <h2 class="lang-en">We'll be waiting for you in Mentana</h2>
-    <p class="lang-it" style="max-width:520px;margin:0 auto 30px;color:rgba(46,46,46,.7);">Via VIII Settembre 4/B, 00013 Mentana (RM) — a due passi dalla fermata Cotral.</p>
-    <p class="lang-en" style="max-width:520px;margin:0 auto 30px;color:rgba(46,46,46,.7);">Via VIII Settembre 4/B, 00013 Mentana (RM) — steps from the Cotral bus stop.</p>
+    <p class="lang-it" style="max-width:520px;margin:0 auto 6px;color:rgba(46,46,46,.7);">Via VIII Settembre 4/B, 00013 Mentana (RM) — a due passi dalla fermata Cotral.</p>
+    <p class="lang-en" style="max-width:520px;margin:0 auto 6px;color:rgba(46,46,46,.7);">Via VIII Settembre 4/B, 00013 Mentana (RM) — steps from the Cotral bus stop.</p>
+    <p style="margin:0 0 30px;font-weight:600;color:var(--espresso);">7:30 – 22:30 <span style="font-weight:400;color:rgba(46,46,46,.6);">· <span class="lang-it">tutti i giorni</span><span class="lang-en">every day</span></span></p>
     <a href="dove-siamo.html" class="btn solid"><span class="lang-it">Come raggiungerci</span><span class="lang-en">How to reach us</span></a>
     <div class="map-embed">
       <iframe
@@ -630,6 +660,21 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
     </div>
   </div>
 </section>
+
+<!-- CITY SECTION: photo file m.jpg -->
+<section class="panel-dim tight">
+  <div class="wrap grid-2">
+    <div class="photo-slot city-photo reveal"><img src="m.jpg" alt="Mentana" onerror="this.remove();this.parentElement.classList.add('img-missing')"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3l2-3h6l2 3h3v11H4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.4"/></svg><span class="lang-it">Mentana</span><span class="lang-en">Mentana</span></div></div>
+    <div class="reveal">
+      <div class="eyebrow"><span class="lang-it">La città</span><span class="lang-en">The city</span></div>
+      <h2 class="lang-it">Mentana, alle porte di Roma</h2>
+      <h2 class="lang-en">Mentana, on Rome's doorstep</h2>
+      <p class="lang-it">A pochi passi da MAM23 si trova il centro storico di Mentana, cittadina della provincia di Roma lungo la via Nomentana, nota soprattutto per la battaglia del 3 novembre 1867, quando i volontari di Giuseppe Garibaldi si scontrarono con le truppe franco-pontificie nel tentativo di liberare Roma. Quella storia rivive ancora oggi nel Museo Garibaldino e nel Sacrario ai caduti, mentre nel cuore del borgo il cinquecentesco Palazzo Borghese ospita il Museo delle Maschere Teatrali. Una passeggiata tra le vie del centro, tra botteghe storiche e piccole piazze, è il modo perfetto per completare la visita da noi.</p>
+      <p class="lang-en">Just steps from MAM23 lies the historic centre of Mentana, a town near Rome along the Via Nomentana, best known for the battle of 3 November 1867, when Giuseppe Garibaldi's volunteers clashed with French and papal troops in an attempt to liberate Rome. That history lives on today at the Museo Garibaldino and the memorial to the fallen, while the 16th-century Palazzo Borghese, at the heart of the old town, houses the Museum of Theatrical Masks. A stroll through the old town's lanes, past historic shops and small squares, is the perfect way to round off your visit with us.</p>
+    </div>
+  </div>
+</section>
+
 <footer class="site">
   <div class="wrap">
     <div class="foot-grid">
@@ -640,6 +685,10 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
         </div>
         <p class="lang-it" style="max-width:320px;color:rgba(46,46,46,.65);font-size:.92rem;">Caffetteria, Cocktail Bar e Bistrò a conduzione familiare, nel cuore di Mentana.</p>
         <p class="lang-en" style="max-width:320px;color:rgba(46,46,46,.65);font-size:.92rem;">A family-run coffee shop, cocktail bar and bistro, in the heart of Mentana.</p>
+        <a href="https://www.facebook.com/profile.php?id=61584714276500" target="_blank" rel="noopener" class="social-link" aria-label="Facebook">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M13.5 21v-7.5h2.5l.5-3h-3V8.5c0-.9.25-1.5 1.5-1.5H16.5V4.3c-.3-.04-1.2-.13-2.3-.13-2.3 0-3.9 1.4-3.9 4V10.5H8v3h2.3V21h3.2z"/></svg>
+          <span class="lang-it">Seguici su Facebook</span><span class="lang-en">Follow us on Facebook</span>
+        </a>
       </div>
       <div>
         <h4><span class="lang-it">Il Locale</span><span class="lang-en">The Place</span></h4>
@@ -660,11 +709,20 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
           <a href="recensioni.html"><span class="lang-it">Recensioni</span><span class="lang-en">Reviews</span></a>
         </div>
       </div>
+      <div>
+        <h4><span class="lang-it">Orari</span><span class="lang-en">Hours</span></h4>
+        <div class="foot-links">
+          <span style="display:block;margin-bottom:10px;font-size:.92rem;">7:30 – 22:30</span>
+          <span class="lang-it" style="display:block;font-size:.8rem;opacity:.65;">Tutti i giorni</span>
+          <span class="lang-en" style="display:block;font-size:.8rem;opacity:.65;">Every day</span>
+        </div>
+      </div>
     </div>
     <div class="bottom">
       <span>&copy; 2026 MAM23 S.r.l. — <span class="lang-it">Tutti i diritti riservati</span><span class="lang-en">All rights reserved</span></span>
       <span class="lang-it">Via VIII Settembre, 4/B · Mentana (RM) · Italia</span>
       <span class="lang-en">Via VIII Settembre, 4/B · Mentana (RM) · Italy</span>
+      <span><a href="privacy-policy.html" style="color:inherit;text-decoration:underline;">Privacy Policy</a> · <a href="cookie-policy.html" style="color:inherit;text-decoration:underline;">Cookie Policy</a></span>
     </div>
   </div>
 </footer>
