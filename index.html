@@ -276,9 +276,9 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
   background:linear-gradient(135deg, var(--wine-2), var(--ivory-dim));
   display:flex;flex-direction:column;align-items:center;justify-content:center;
   gap:10px;color:var(--gold);overflow:hidden;
-  border:1px solid var(--line);
 }
-.photo-slot::after{
+.photo-slot.img-missing{border:1px solid var(--line);}
+.photo-slot.img-missing::after{
   content:"";position:absolute;inset:8px;border:1px dashed rgba(79,133,119,.3);pointer-events:none;
 }
 .photo-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
@@ -331,11 +331,12 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
 .gallery-hint{display:none;}
 
 .avatar-slot{
-  width:52px;height:52px;border-radius:50%;flex-shrink:0;
+  position:relative;width:52px;height:52px;border-radius:50%;flex-shrink:0;overflow:hidden;
   background:linear-gradient(135deg, var(--wine-2), var(--ivory-dim));
   display:flex;align-items:center;justify-content:center;color:var(--gold);
-  box-shadow:0 0 0 1px var(--line);
 }
+.avatar-slot.img-missing{box-shadow:0 0 0 1px var(--line);}
+.avatar-slot img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;display:block;}
 .avatar-slot svg{width:24px;height:24px;}
 .review-card .who{display:flex;align-items:center;gap:12px;margin-top:18px;}
 .review-card .who .name{font-weight:700;font-size:.88rem;color:var(--espresso);}
@@ -486,13 +487,13 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
       <h2 class="lang-en">Guests who return</h2>
     </div>
     <div class="grid-3">
-      <!-- REVIEW AVATARS: replace each .avatar-slot with <img src="images/reviewer.jpg" alt="..."> once photos are ready -->
+      <!-- REVIEW AVATARS: drop photos named r1.jpg, r2.jpg, r3.jpg in the same folder as index.html. If missing, a simple icon placeholder shows instead. -->
       <div class="review-card reveal">
         <div class="stars">★★★★★</div>
         <p class="lang-it" style="font-style:italic;">"Locale bellissimo e grande in stile moderno. Personale simpatico, gentile, servizio al tavolo. Da provare."</p>
         <p class="lang-en" style="font-style:italic;">"Beautiful, spacious, modern-style venue. Friendly, kind staff and table service. Worth trying."</p>
         <div class="who">
-          <div class="avatar-slot"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.4"/><path d="M5 20c1.2-4 4-6 7-6s5.8 2 7 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <div class="avatar-slot"><img src="r1.jpg" alt="Vincenzo P." onerror="this.remove();this.parentElement.classList.add('img-missing')"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.4"/><path d="M5 20c1.2-4 4-6 7-6s5.8 2 7 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
           <div><div class="name">Vincenzo P.</div><div class="meta" style="margin-top:0;">Mentana</div></div>
         </div>
       </div>
@@ -501,7 +502,7 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
         <p class="lang-it" style="font-style:italic;">"Location stupenda, ottima qualità del cibo e servizio super!!! Tornerò sicuramente!"</p>
         <p class="lang-en" style="font-style:italic;">"Stunning location, excellent food quality, and super service!!! I'll definitely be back!"</p>
         <div class="who">
-          <div class="avatar-slot"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.4"/><path d="M5 20c1.2-4 4-6 7-6s5.8 2 7 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <div class="avatar-slot"><img src="r2.jpg" alt="Mirko D." onerror="this.remove();this.parentElement.classList.add('img-missing')"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.4"/><path d="M5 20c1.2-4 4-6 7-6s5.8 2 7 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
           <div><div class="name">Mirko D.</div></div>
         </div>
       </div>
@@ -510,7 +511,7 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
         <p class="lang-it" style="font-style:italic;">"Bel posto, cibo ottimo, servizio eccellente. Tornerò di sicuro."</p>
         <p class="lang-en" style="font-style:italic;">"Nice place, great food, excellent service. I will definitely be back."</p>
         <div class="who">
-          <div class="avatar-slot"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.4"/><path d="M5 20c1.2-4 4-6 7-6s5.8 2 7 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
+          <div class="avatar-slot"><img src="r3.jpg" alt="Sante D." onerror="this.remove();this.parentElement.classList.add('img-missing')"><svg viewBox="0 0 24 24" fill="none"><circle cx="12" cy="8" r="3.4" stroke="currentColor" stroke-width="1.4"/><path d="M5 20c1.2-4 4-6 7-6s5.8 2 7 6" stroke="currentColor" stroke-width="1.4" stroke-linecap="round"/></svg></div>
           <div><div class="name">Sante D.</div></div>
         </div>
       </div>
