@@ -3,8 +3,8 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Chi Siamo · MAM23</title>
-<meta name="description" content="La storia di MAM23: due mamme, tre figlie, un unico sogno a Mentana.">
+<title>Bistro · MAM23</title>
+<meta name="description" content="Il Bistro di MAM23 a Mentana: cucina semplice e vera.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400;1,9..144,500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
@@ -243,6 +243,18 @@ section.tight{padding:70px 0;}
 .card h3{font-size:1.3rem;}
 .card p{color:rgba(46,46,46,.75);margin-bottom:0;}
 
+.menu-list{list-style:none;margin:22px 0 0;padding:0;border-top:1px solid rgba(46,46,46,.08);}
+.menu-list li{
+  display:flex;align-items:baseline;gap:8px;
+  padding:11px 0;border-bottom:1px solid rgba(46,46,46,.08);
+  font-size:.92rem;
+}
+.menu-list li span{color:var(--espresso);}
+.menu-list li em{
+  margin-left:auto;font-style:normal;font-weight:700;color:var(--gold);
+  white-space:nowrap;padding-left:10px;
+}
+
 .panel-dark{background:var(--gold-soft);color:var(--espresso);}
 .panel-dark h2{color:var(--espresso);}
 .panel-dark p{color:rgba(46,46,46,.78);}
@@ -475,7 +487,7 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
 }
 
 </style>
-</head><body data-current="about">
+</head><body data-current="bistro">
 <header class="site">
   <div class="nav-inner">
     <a href="index.html" class="brand">
@@ -515,70 +527,90 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
       </button>
     </div>
   </div>
-</header>
-<section class="hero">
-  <!-- HERO PHOTO: put your photo at mam.jpg (same folder as this page). Fills the whole hero, headline sits on top of it. -->
-  <div class="hero-bg"><img src="mam.jpg" alt="MAM23 - Marzia e Valentina" onerror="this.style.display='none'"></div>
+</header><section class="hero">
+  <!-- HERO PHOTO: put your bistro photo at bistro-hero.jpg (same folder as this page). Fills the whole hero, headline sits on top of it. -->
+  <div class="hero-bg"><img src="bistro-hero.jpg" alt="Bistrò MAM23" onerror="this.style.display='none'"></div>
   <div class="hero-overlay"></div>
   <div class="wrap">
     <div class="hero-inner">
-      <div class="eyebrow"><span class="lang-it">Chi siamo</span><span class="lang-en">About us</span></div>
-      <h1 class="lang-it">A volte la vita ti mette<br>davanti a un muro.</h1>
-      <h1 class="lang-en">Sometimes life hits a wall<br>just when you need it least.</h1>
-      <p class="crumb"><a href="index.html">Home</a> / <span class="lang-it">Chi Siamo</span><span class="lang-en">About Us</span></p>
+      <div class="eyebrow">Bistrò</div>
+      <h1 class="lang-it">Cucina semplice,<br>fatta con verità.</h1>
+      <h1 class="lang-en">Simple cooking,<br>made with honesty.</h1>
+      <p class="lang-it lede">MAM23 lavora con passione, unendo tradizione e innovazione in una varietà di gusti tutti da assaggiare, con le migliori materie prime.</p>
+      <p class="lang-en lede">MAM23 works with passion, blending tradition and innovation across a range of flavours worth tasting, using the finest ingredients.</p>
+      <div class="cta-row">
+        <a href="tel:+390669262619" class="btn solid"><span class="lang-it">Prenota — Chiama ora</span><span class="lang-en">Book — Call now</span></a>
+        <a href="index.html" class="btn"><span class="lang-it">Torna alla Home</span><span class="lang-en">Back to Home</span></a>
+      </div>
+      <p class="crumb"><a href="index.html">Home</a> / Bistrò</p>
     </div>
   </div>
 </section>
 
 <section>
-  <div class="wrap" style="max-width:800px;">
+  <div class="wrap grid-2">
     <div class="reveal">
-      <p class="lang-it">La nostra storia inizia con un contratto mai firmato e un progetto ambizioso che è andato in fumo nell'istante esatto in cui doveva nascere. Ma noi, Marzia e Valentina, abbiamo scelto di non guardare quella porta chiusa come una sconfitta, ma come l'occasione per costruire qualcosa che ci appartenesse davvero, nel profondo.</p>
-      <p class="lang-en">Our story begins with an unsigned contract and an ambitious project that went up in smoke the exact moment it was meant to be born. But we, Marzia and Valentina, chose not to see that closed door as a defeat — but as the chance to build something that truly, deeply belonged to us.</p>
-
-      <p class="lang-it">Il battito del cuore nel nome: MAM23. Abbiamo deciso di ripartire dalle fondamenta della nostra vita — le nostre figlie.</p>
-      <p class="lang-en">The heartbeat inside the name: MAM23. We decided to start again from the foundations of our life — our daughters.</p>
+      <div class="eyebrow"><span class="lang-it">La tradizione mentanese</span><span class="lang-en">Mentana's tradition</span></div>
+      <h2 class="lang-it">Un piccolo locale, un'atmosfera di casa</h2>
+      <h2 class="lang-en">A small place, a homely atmosphere</h2>
+      <p class="lang-it">Il nostro è un locale tipico della tradizione mentanese, caratterizzato da un'atmosfera informale e casalinga, dove si servono pasti veloci, piatti semplici e bevande.</p>
+      <p class="lang-en">Ours is a place rooted in Mentana's own tradition, with an informal, homely atmosphere, serving quick meals, simple dishes and drinks.</p>
+      <p class="lang-it">A differenza del ristorante classico, il bistrò ha un menù ridotto e un servizio più agile: un luogo di ritrovo sociale che fonde l'estetica del caffè con quella della tavola calda.</p>
+      <p class="lang-en">Unlike a classic restaurant, our bistro keeps a shorter menu and a lighter, quicker service — a social gathering place that blends the aesthetic of a café with that of a home kitchen.</p>
     </div>
-
-    <div class="reveal panel-dark" style="padding:50px 44px;margin:50px 0;text-align:center;">
-      <div class="eyebrow" style="justify-content:center;"><span class="lang-it">Un acronimo di famiglia e futuro</span><span class="lang-en">An acronym of family and future</span></div>
-      <div style="display:flex;justify-content:center;gap:48px;flex-wrap:wrap;margin-top:20px;font-family:'Fraunces',serif;">
-        <div><span style="font-size:2.4rem;color:var(--gold);">M</span><div class="lang-it" style="font-size:.85rem;color:rgba(46,46,46,.7);">come Martina</div><div class="lang-en" style="font-size:.85rem;color:rgba(46,46,46,.7);">for Martina</div></div>
-        <div><span style="font-size:2.4rem;color:var(--gold);">A</span><div class="lang-it" style="font-size:.85rem;color:rgba(46,46,46,.7);">come Aurora</div><div class="lang-en" style="font-size:.85rem;color:rgba(46,46,46,.7);">for Aurora</div></div>
-        <div><span style="font-size:2.4rem;color:var(--gold);">M</span><div class="lang-it" style="font-size:.85rem;color:rgba(46,46,46,.7);">come Mia</div><div class="lang-en" style="font-size:.85rem;color:rgba(46,46,46,.7);">for Mia</div></div>
-      </div>
-      <p style="margin-top:26px;color:rgba(46,46,46,.78);">
-        <span class="lang-it">Insieme a noi, Marzia e Valentina, e a quel 23 che segna l'anno della nostra rinascita: il 2023.</span>
-        <span class="lang-en">Together with us, Marzia and Valentina, and that 23 marking the year of our rebirth: 2023.</span>
-      </p>
-    </div>
-
-    <div class="reveal">
-      <p class="lang-it">Abbiamo voluto che le nostre tre figlie fossero il simbolo di questa sfida, perché è per loro, e grazie alla forza che ci danno, che abbiamo spalancato quella porta che prima non riuscivamo a vedere.</p>
-      <p class="lang-en">We wanted our three daughters to symbolize this challenge — because it's for them, and thanks to the strength they give us, that we opened the door we couldn't see before.</p>
-
-      <h2 style="margin-top:50px;" class="lang-it">Caffetteria, Cocktail, Bistrò: l'eccellenza è di casa</h2>
-      <h2 style="margin-top:50px;" class="lang-en">Cafe, Cocktail Bar, Bistro: excellence at home</h2>
-
-      <p class="lang-it">MAM23 nasce così: dalla resilienza di due mamme e dalla voglia di creare un luogo unico. Un bistrò dove la cura del dettaglio, la passione per la buona cucina e l'arte del mixology si fondono in un'atmosfera accogliente e moderna.</p>
-      <p class="lang-en">MAM23 was born this way: from the resilience of two mothers and the desire to create a unique place. A bistro where attention to detail, a passion for good food, and the art of mixology blend into a welcoming, modern atmosphere.</p>
-
-      <p class="lang-it">Oggi, quando varchi la soglia del MAM23, non entri solo in una caffetteria o in un cocktail bar: entri nella nostra storia, fatta di coraggio, legami indissolubili e la bellezza di chi sa ricominciare, più forte di prima.</p>
-      <p class="lang-en">Today, when you cross the threshold of MAM23, you don't just enter a coffee shop or cocktail bar — you enter our story, made of courage, unbreakable bonds, and the beauty of those who know how to start again, stronger than before.</p>
+    <div class="reveal card" style="padding:44px;">
+      <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="20" width="32" height="4" rx="1"/><path d="M12 24v10a4 4 0 0 0 4 4h16a4 4 0 0 0 4-4V24M16 12v8M24 10v10M32 12v8"/></svg>
+      <h3 class="lang-it">Semplice, non povero</h3>
+      <h3 class="lang-en">Simple, never plain</h3>
+      <p class="lang-it">Dai prodotti tradizionali fino alle lavorazioni più particolari, dai gusti più comuni fino alle qualità più esotiche: ogni piatto regala un'esperienza golosa, ad un prezzo più accessibile rispetto alla cucina classica.</p>
+      <p class="lang-en">From traditional produce to more particular preparations, from familiar flavours to more exotic ones — every dish delivers an indulgent experience, at a friendlier price than classic dining.</p>
     </div>
   </div>
 </section>
 
-<section class="panel-dim tight">
-  <div class="wrap" style="text-align:center;">
-    <h2 class="lang-it">Marzia &amp; Valentina</h2>
-    <h2 class="lang-en">Marzia &amp; Valentina</h2>
-    <p class="lang-it" style="max-width:460px;margin:0 auto 30px;color:rgba(46,46,46,.7);">Le fondatrici di MAM23 — due mamme, un'unica visione.</p>
-    <p class="lang-en" style="max-width:460px;margin:0 auto 30px;color:rgba(46,46,46,.7);">The founders of MAM23 — two mothers, one shared vision.</p>
-    <div style="display:flex;gap:16px;justify-content:center;flex-wrap:wrap;">
-      <a href="tel:+390669262619" class="btn solid"><span class="lang-it">Prenota — Chiama ora</span><span class="lang-en">Book — Call now</span></a>
-      <a href="dove-siamo.html" class="btn"><span class="lang-it">Vieni a trovarci</span><span class="lang-en">Come visit us</span></a>
+<section class="panel-dim">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;"><span class="lang-it">Alcuni dei nostri piatti</span><span class="lang-en">Some of our dishes</span></div>
+      <h2 class="lang-it">Dal mattino a sera</h2>
+      <h2 class="lang-en">From morning to night</h2>
     </div>
+    <div class="grid-3">
+      <div class="card reveal"><h3 class="lang-it">Piatti del giorno</h3><h3 class="lang-en">Daily dishes</h3><p class="lang-it">Proposte fresche, legate alla stagione e alla disponibilità del mercato.</p><p class="lang-en">Fresh proposals, tied to the season and market availability.</p></div>
+      <div class="card reveal"><h3 class="lang-it">Taglieri &amp; sfizi</h3><h3 class="lang-en">Boards &amp; small bites</h3><p class="lang-it">Salumi e formaggi selezionati, perfetti da condividere.</p><p class="lang-en">Selected cured meats and cheeses, perfect for sharing.</p></div>
+      <div class="card reveal"><h3 class="lang-it">Dolci della casa</h3><h3 class="lang-en">House desserts</h3><p class="lang-it">Piccola pasticceria preparata con calma, ogni giorno.</p><p class="lang-en">Small pastries made unhurried, every single day.</p></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;"><span class="lang-it">Uno sguardo dentro</span><span class="lang-en">A look inside</span></div>
+      <h2 class="lang-it">La galleria del Bistrò</h2>
+      <h2 class="lang-en">Bistro gallery</h2>
+    </div>
+    <!-- GALLERY: drop your photos in the same folder as this page, named B1.jpg through B6.jpg. If a file is missing, a placeholder with a label shows instead. -->
+    <div class="gallery-grid reveal">
+      <div class="photo-slot g1" onclick="if(!this.classList.contains('img-missing'))openLightbox(0)"><img src="B1.jpg" alt="Sala del Bistrò" onerror="this.remove();this.parentElement.classList.add('img-missing')"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3l2-3h6l2 3h3v11H4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.4"/></svg><span class="lang-it">Sala del Bistrò</span><span class="lang-en">Bistro room</span></div></div>
+      <div class="photo-slot g2" onclick="if(!this.classList.contains('img-missing'))openLightbox(1)"><img src="B2.jpg" alt="Piatto del giorno" onerror="this.remove();this.parentElement.classList.add('img-missing')"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3l2-3h6l2 3h3v11H4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.4"/></svg><span class="lang-it">Piatto del giorno</span><span class="lang-en">Daily dish</span></div></div>
+      <div class="photo-slot g3" onclick="if(!this.classList.contains('img-missing'))openLightbox(2)"><img src="B3.jpg" alt="Tagliere" onerror="this.remove();this.parentElement.classList.add('img-missing')"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3l2-3h6l2 3h3v11H4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.4"/></svg><span class="lang-it">Tagliere</span><span class="lang-en">Sharing board</span></div></div>
+      <div class="photo-slot g4" onclick="if(!this.classList.contains('img-missing'))openLightbox(3)"><img src="B4.jpg" alt="Dolce della casa" onerror="this.remove();this.parentElement.classList.add('img-missing')"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3l2-3h6l2 3h3v11H4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.4"/></svg><span class="lang-it">Dolce della casa</span><span class="lang-en">House dessert</span></div></div>
+      <div class="photo-slot g5" onclick="if(!this.classList.contains('img-missing'))openLightbox(4)"><img src="B5.jpg" alt="Cucina" onerror="this.remove();this.parentElement.classList.add('img-missing')"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3l2-3h6l2 3h3v11H4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.4"/></svg><span class="lang-it">Cucina</span><span class="lang-en">Kitchen</span></div></div>
+      <div class="photo-slot g6" onclick="if(!this.classList.contains('img-missing'))openLightbox(5)"><img src="B6.jpg" alt="Tavolo apparecchiato" onerror="this.remove();this.parentElement.classList.add('img-missing')"><div class="ph-fallback"><svg viewBox="0 0 24 24" fill="none"><path d="M4 8h3l2-3h6l2 3h3v11H4z" stroke="currentColor" stroke-width="1.4" stroke-linejoin="round"/><circle cx="12" cy="13" r="3.4" stroke="currentColor" stroke-width="1.4"/></svg><span class="lang-it">Tavolo apparecchiato</span><span class="lang-en">Set table</span></div></div>
+    </div>
+    <div class="gallery-hint">
+      <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+      <span class="lang-it">Scorri per vedere altro</span><span class="lang-en">Swipe to see more</span>
+    </div>
+  </div>
+</section>
+
+<section class="tight" style="text-align:center;">
+  <div class="wrap">
+    <h2 class="lang-it">Vieni ad assaggiare</h2>
+    <h2 class="lang-en">Come and taste it</h2>
+    <a href="tel:+390669262619" class="btn solid"><span class="lang-it">Prenota — Chiama ora</span><span class="lang-en">Book — Call now</span></a>
   </div>
 </section>
 
@@ -711,7 +743,7 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
   /* gallery lightbox - only present on pages with a gallery */
   var lightbox = document.getElementById('lightbox');
   if(lightbox){
-    var galleryImages = ['1.jpg','2.jpg','3.jpg','4.jpg','5.jpg','6.jpg'];
+    var galleryImages = ['B1.jpg','B2.jpg','B3.jpg','B4.jpg','B5.jpg','B6.jpg'];
     var lbIndex = 0;
     var lightboxImg = document.getElementById('lightboxImg');
     var lightboxCounter = document.getElementById('lightboxCounter');
