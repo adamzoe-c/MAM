@@ -243,6 +243,18 @@ section.tight{padding:70px 0;}
 .card h3{font-size:1.3rem;}
 .card p{color:rgba(46,46,46,.75);margin-bottom:0;}
 
+.menu-list{list-style:none;margin:22px 0 0;padding:0;border-top:1px solid rgba(46,46,46,.08);}
+.menu-list li{
+  display:flex;align-items:baseline;gap:8px;
+  padding:11px 0;border-bottom:1px solid rgba(46,46,46,.08);
+  font-size:.92rem;
+}
+.menu-list li span{color:var(--espresso);}
+.menu-list li em{
+  margin-left:auto;font-style:normal;font-weight:700;color:var(--gold);
+  white-space:nowrap;padding-left:10px;
+}
+
 .panel-dark{background:var(--gold-soft);color:var(--espresso);}
 .panel-dark h2{color:var(--espresso);}
 .panel-dark p{color:rgba(46,46,46,.78);}
@@ -595,6 +607,79 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
     <div class="gallery-hint">
       <svg width="14" height="14" viewBox="0 0 24 24" fill="none"><path d="M8 5l-5 7 5 7M16 5l5 7-5 7" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
       <span class="lang-it">Scorri per vedere altro</span><span class="lang-en">Swipe to see more</span>
+    </div>
+  </div>
+</section>
+
+<section id="carta">
+  <div class="wrap">
+    <div class="section-head center reveal">
+      <div class="eyebrow" style="justify-content:center;"><span class="lang-it">Prezzi indicativi</span><span class="lang-en">Indicative prices</span></div>
+      <h2 class="lang-it">La nostra carta</h2>
+      <h2 class="lang-en">Our menu</h2>
+      <p class="lang-it" style="max-width:560px;margin:14px auto 0;color:rgba(46,46,46,.7);">Una selezione dei nostri prodotti. Il menu completo è disponibile nel locale.</p>
+      <p class="lang-en" style="max-width:560px;margin:14px auto 0;color:rgba(46,46,46,.7);">A selection of what we serve. The full menu is available in-house.</p>
+    </div>
+
+    <div class="grid-3" style="align-items:start;">
+      <div class="card reveal">
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 18h22a4 4 0 0 1 0 8h-1"/><path d="M10 18v10a8 8 0 0 0 8 8h4a8 8 0 0 0 8-8v-2"/><path d="M14 10c0-2 2-2 2-4M20 10c0-2 2-2 2-4"/></svg>
+        <h3 class="lang-it">Colazione</h3>
+        <h3 class="lang-en">Breakfast</h3>
+        <ul class="menu-list">
+          <li><span class="lang-it">Caffè espresso</span><span class="lang-en">Espresso</span><em>€1,20</em></li>
+          <li><span class="lang-it">Cappuccino</span><span class="lang-en">Cappuccino</span><em>€1,80</em></li>
+          <li><span class="lang-it">Cornetto classico</span><span class="lang-en">Classic croissant</span><em>€1,50</em></li>
+          <li><span class="lang-it">Cornetto vegano</span><span class="lang-en">Vegan croissant</span><em>€2,00</em></li>
+          <li><span class="lang-it">Cornetto senza glutine</span><span class="lang-en">Gluten-free croissant</span><em>€2,20</em></li>
+          <li><span class="lang-it">Tè a scelta</span><span class="lang-en">Tea, any variety</span><em>€2,50</em></li>
+          <li><span class="lang-it">Pasticceria secca</span><span class="lang-en">Dry pastry</span><em>€1,50</em></li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="8" y="20" width="32" height="4" rx="1"/><path d="M12 24v10a4 4 0 0 0 4 4h16a4 4 0 0 0 4-4V24M16 12v8M24 10v10M32 12v8"/></svg>
+        <h3 class="lang-it">Panini &amp; Piadine</h3>
+        <h3 class="lang-en">Sandwiches &amp; Piadina</h3>
+        <ul class="menu-list">
+          <li><span class="lang-it">Panino misto</span><span class="lang-en">Mixed panino</span><em>€5,00</em></li>
+          <li><span class="lang-it">Panino gourmet</span><span class="lang-en">Gourmet panino</span><em>€6,50</em></li>
+          <li><span class="lang-it">Piadina farcita</span><span class="lang-en">Filled piadina</span><em>€6,00</em></li>
+          <li><span class="lang-it">Piadina vegetariana</span><span class="lang-en">Vegetarian piadina</span><em>€5,50</em></li>
+        </ul>
+        <h3 style="margin-top:30px;" class="lang-it">Fritti Misti</h3>
+        <h3 style="margin-top:30px;" class="lang-en">Fried Mix</h3>
+        <ul class="menu-list">
+          <li><span class="lang-it">Fritto misto, porzione</span><span class="lang-en">Fried mix, portion</span><em>€7,00</em></li>
+          <li><span class="lang-it">Crocchette &amp; supplì</span><span class="lang-en">Croquettes &amp; supplì</span><em>€5,50</em></li>
+          <li><span class="lang-it">Patatine fritte</span><span class="lang-en">French fries</span><em>€4,00</em></li>
+        </ul>
+      </div>
+
+      <div class="card reveal">
+        <svg class="icon" viewBox="0 0 48 48" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M10 8h28l-12 16v14M24 24v14M17 38h14"/></svg>
+        <h3 class="lang-it">Aperitivi &amp; Apericena</h3>
+        <h3 class="lang-en">Aperitivo &amp; Apericena</h3>
+        <ul class="menu-list">
+          <li><span class="lang-it">Aperitivo classico</span><span class="lang-en">Classic aperitivo</span><em>€6,00</em></li>
+          <li><span class="lang-it">Cocktail firmato MAM23</span><span class="lang-en">MAM23 signature cocktail</span><em>€8,00</em></li>
+          <li><span class="lang-it">Apericena</span><span class="lang-en">Apericena</span><em>€10,00</em></li>
+        </ul>
+        <h3 style="margin-top:30px;" class="lang-it">Taglieri</h3>
+        <h3 style="margin-top:30px;" class="lang-en">Sharing Boards</h3>
+        <ul class="menu-list">
+          <li><span class="lang-it">Tagliere piccolo</span><span class="lang-en">Small board</span><em>€9,00</em></li>
+          <li><span class="lang-it">Tagliere della casa</span><span class="lang-en">House board</span><em>€10,00</em></li>
+        </ul>
+      </div>
+    </div>
+
+    <p style="text-align:center;margin-top:36px;font-size:.8rem;color:rgba(46,46,46,.55);">
+      <span class="lang-it">Prezzi da €1 a €10 — anche da asporto. Disponibili anche menu per eventi su richiesta.</span>
+      <span class="lang-en">Prices from €1 to €10 — takeaway available too. Event menus also available on request.</span>
+    </p>
+    <div style="text-align:center;margin-top:26px;">
+      <a href="tel:+390669262619" class="btn solid"><span class="lang-it">Prenota — Chiama ora</span><span class="lang-en">Book — Call now</span></a>
     </div>
   </div>
 </section>
