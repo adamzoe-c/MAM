@@ -487,6 +487,27 @@ footer.site .bottom{border-top:1px solid rgba(79,133,119,.2);padding-top:24px;fo
   .legal-content table th,.legal-content table td{padding:8px;}
 }
 
+/* ===== desktop refinements ===== */
+.hero .crumb,.hero .crumb a,.hero .crumb span{color:#fff;opacity:1;}
+.hero .crumb a{text-decoration:underline;text-underline-offset:3px;}
+.hero .btn:not(.solid){border-color:rgba(255,255,255,.7);color:#fff;}
+.hero .btn:not(.solid):hover{background:#fff;color:var(--gold);}
+@media (min-width:861px){
+  .hero{min-height:min(68vh,620px);}
+  .hero .wrap{padding:90px 28px 80px;}
+  .hero-inner{max-width:760px;}
+  .map-placeholder{min-height:380px !important;border-radius:12px;}
+  .hero h1{font-size:clamp(2.4rem,3vw,3.1rem);line-height:1.12;}
+  section{padding:88px 0;}
+  section.tight{padding:64px 0;}
+  .gallery-grid{gap:20px;}
+  .gallery-grid .photo-slot{aspect-ratio:4/3;}
+  .photo-slot{background:linear-gradient(135deg,var(--wine-3),var(--gold-soft));}
+}
+@media (min-width:1600px){
+  :root{--maxw:1320px;}
+  body{font-size:17px;}
+}
 </style>
 </head><body data-current="reviews">
 <header class="site">
